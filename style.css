@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f4f1;
+  color: #5a4635;
+  font-family: "Hiragino Mincho ProN", serif;
+}
+
+/* ヘッダー */
+.header {
+  background: #f0ece7;
+  height: 80px;
+}
+
+.header-inner {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #7a6756;
+}
+
+/* ヒーロー */
+.hero {
+  height: 520px;
+  background: url("images/hero.png") center/cover;
+  position: relative;
+  animation: zoom 8s ease-in-out infinite alternate;
+}
+
+
+@keyframes zoom {
+  from { background-size: 100%; }
+  to { background-size: 110%; }
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  animation: fadeIn 2s ease;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* メニュー */
+.menu {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.menu-grid {
+  width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+}
+
+/* タブ */
+.tab button {
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.tab .active {
+  background: #6b3e2e;
+  color: white;
+}
+
+/* カード */
+.card {
+  display: flex;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* 非表示 */
+.hidden {
+  display: none;
+}
+
+/* 店舗情報 */
+.info {
+  padding: 0px 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.info-inner {
+  width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.info-text {
+    padding: 20px 0px;
+}
+
+.map iframe {
+  width: 500px;
+  height: 300px;
+}

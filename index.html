@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CAFE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+  <div class="header-inner">
+    <h1 class="logo">CAFE</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#info">店舗情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero">
+
+</section>
+
+<!-- メニュー -->
+<section id="menu" class="menu">
+  <h2>メニュー</h2>
+
+  <div class="tab">
+    <button class="tab-btn active" id="drink-button">ドリンク</button>
+    <button class="tab-btn" id="food-button">フード</button>
+  </div>
+
+  <!-- ドリンク -->
+  <div class="menu-grid" id="drink">
+
+    <div class="card">
+      <img src="images/coffe.png">
+      <div>
+        <h3>コーヒー</h3>
+        <p>オリジナルブレンド</p>
+        <span>¥500</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/coffelatte.png">
+      <div>
+        <h3>カフェラテ</h3>
+        <p>ミルクのまろやかさ</p>
+        <span>¥550</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/tea.png">
+      <div>
+        <h3>紅茶</h3>
+        <p>贅沢な香り</p>
+        <span>¥400</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/orange.png">
+      <div>
+        <h3>オレンジジュース</h3>
+        <p>新鮮な柑橘の香り</p>
+        <span>¥300</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- フード -->
+  <div class="menu-grid hidden" id="food">
+
+    <div class="card">
+      <img src="images/toast.png">
+      <div>
+        <h3>トースト</h3>
+        <p>ふわふわの食感</p>
+        <span>¥400</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/sandwich.png">
+      <div>
+        <h3>サンドイッチ</h3>
+        <p>新鮮な野菜とチーズ</p>
+        <span>¥500</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/cake.png">
+      <div>
+        <h3>チーズケーキ</h3>
+        <p>濃厚な味わい</p>
+        <span>¥600</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/pafe.png">
+      <div>
+        <h3>パフェ</h3>
+        <p>ふわふわの食感</p>
+        <span>¥400</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 店舗情報 -->
+<section id="info" class="info">
+  <h2>店舗情報</h2>
+
+  <div class="info-inner">
+    <div class="info-text">
+      <p><strong>営業時間</strong> 10:00-20:00</p>
+      <p><strong>定休日</strong> 火曜日</p>
+    </div>
+
+    <div class="map">
+        <p><strong>住所</strong> 東京都渋谷区神宮前1-2-3</p>
+      <iframe
+        src="https://maps.google.com/maps?q=tokyo&t=&z=13&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

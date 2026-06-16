@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAFE</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -24,7 +25,9 @@
 
 <!-- ヒーロー -->
 <section class="hero">
-
+  <div class="slide active" style="background-image:url('./images/hero.png')"></div>
+  <div class="slide" style="background-image:url('./images/hero2.png')"></div>
+  <div class="slide" style="background-image:url('./images/hero3.png')"></div>
 </section>
 
 <!-- メニュー -->
@@ -126,12 +129,21 @@
 
   <div class="info-inner">
     <div class="info-text">
-      <p><strong>営業時間</strong> 10:00-20:00</p>
-      <p><strong>定休日</strong> 火曜日</p>
+      <div class="info-item">
+        <strong>住所</strong>
+        <span>東京都渋谷区神宮前1-2-3</span>
+      </div>
+      <div class="info-item">
+        <strong>営業時間</strong>
+        <span>10:00-20:00</span>
+      </div>
+      <div class="info-item">
+        <strong>定休日</strong>
+        <span>火曜日</span>
+      </div>
     </div>
 
     <div class="map">
-        <p><strong>住所</strong> 東京都渋谷区神宮前1-2-3</p>
       <iframe
         src="https://maps.google.com/maps?q=tokyo&t=&z=13&ie=UTF8&iwloc=&output=embed">
       </iframe>
